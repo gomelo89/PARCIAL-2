@@ -117,22 +117,20 @@ public class Metodos {
         }
     }
 
-    public void ModificarRegistro(Stack<ObjPc> pila1) {
+    public void Devolver(Stack<ObjPc> pila1) {
         int serial = 0;
-        System.out.println("ingrese el serial del dispositivo que desea modificar");
+        System.out.println("ingrese el serial del dispositivo que desea devolver");
         serial = sc.nextInt();
         for (ObjPc pc : pila1) {
-            if (ObjPc.getSerial() == serial) {
+            if (pc.getSerial() == serial) {
 
-                System.out.println("ingrese el precio");
-                vehiculo.setPrecio(sc.nextInt());
-                System.out.println("ingrese el color");
-                vehiculo.setColor(sc.next());
-                vehiculo.setMarca(marca);
+                pc.setNomUsuario("");
+                System.out.println(pc.getDisponible());
+                pc.setSerial(serial);
 
             }
         }
-        MostrarPila(pila);
+        MostrarPila1(pila1);
     }
 
 }

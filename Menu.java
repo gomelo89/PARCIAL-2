@@ -46,12 +46,11 @@ public class Menu {
             opt = sc.nextInt();
             switch (opt) {
                 case 1:
+                    m.Devolver();
                 case 2:
 
                     break;
-                case 3:
-                    m.ModificarRegistro(pila1);
-                    break;
+
                 default:
                     System.out.println("pagina en mantenimiento ");
                     break;
