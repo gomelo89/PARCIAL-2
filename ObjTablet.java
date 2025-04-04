@@ -1,19 +1,19 @@
 public class ObjTablet {
-    private int serial;
+    private String serial;
     private int tamaño;
     private String marca;
-    private int precio;
-    private String NomUsuario;
+    private double precio;
+    private String NombreUsuario;
     private boolean disponible;
 
     public ObjTablet() {
     }
 
-    public int getSerial() {
+    public String getSerial() {
         return serial;
     }
 
-    public void setSerial(int serial) {
+    public void setSerial(String serial) {
         this.serial = serial;
     }
 
@@ -33,20 +33,20 @@ public class ObjTablet {
         this.marca = marca;
     }
 
-    public int getPrecio() {
+    public double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(int precio) {
+    public void setPrecio(double precio) {
         this.precio = precio;
     }
 
-    public String getNomUsuario() {
-        return NomUsuario;
+    public String getNombreUsuario() {
+        return NombreUsuario;
     }
 
-    public void setNomUsuario(String nomUsuario) {
-        NomUsuario = nomUsuario;
+    public void setNombreUsuario(String NombreUsuario) {
+        this.NombreUsuario = NombreUsuario;
     }
 
     public boolean getDisponible() {

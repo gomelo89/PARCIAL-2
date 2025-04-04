@@ -1,20 +1,23 @@
-public class ObjPc{
-    private int serial;
+public class ObjComputador{
+    private String serial;
     private String marca;
     private int memoriaRam;
     private int discoDuro;
-    private int precio;
-    private String NomUsuario;
+    private double precio;
+    private int cantidad;
+    
+
+    private String NombreUsuario;
     private boolean disponible;
 
-    public ObjPc() {
+    public ObjComputador() {
     }
 
-    public int getSerial() {
+    public String getSerial() {
         return serial;
     }
 
-    public void setSerial(int serial) {
+    public void setSerial(String serial) {
         this.serial = serial;
     }
 
@@ -42,20 +45,27 @@ public class ObjPc{
         this.discoDuro = discoDuro;
     }
 
-    public int getPrecio() {
+    public double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(int precio) {
+    public void setPrecio(double precio) {
         this.precio = precio;
     }
-
-    public String getNomUsuario() {
-        return NomUsuario;
+    public int getCantidad() {
+        return cantidad;
     }
 
-    public void setNomUsuario(String nomUsuario) {
-        NomUsuario = nomUsuario;
+    public void setCantidad(int cantidad) {
+        this.cantidad = cantidad;
+    }
+
+    public String getNombreUsuario() {
+        return NombreUsuario;
+    }
+
+    public void setNombreUsuario(String NombreUsuario) {
+        this.NombreUsuario = NombreUsuario;
     }
 
     public boolean getDisponible() {
